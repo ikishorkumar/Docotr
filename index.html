@@ -16,15 +16,17 @@
     <header>
       <nav class="navbar">
         <div class="_logo">
-          <img src="Images\logo.png" alt="Logo" />
-          <h1>Doctor</h1>
+          <a href="/">
+            <img src="Images\logo.png" alt="Logo" />
+            <h1>Doctor</h1>
+          </a>
         </div>
         <ul class="_nav-item">
-          <li class="_active"><a href="#">Home</a></li>
-          <li><a href="#">Find a doctor</a></li>
-          <li><a href="#">Apps</a></li>
-          <li><a href="#">Testimonials</a></li>
-          <li><a href="#">About us</a></li>
+          <li class="_active"><a href="#home">Home</a></li>
+          <li><a href="#doctor">Find a doctor</a></li>
+          <li><a href="#apps">Apps</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#aboutUs">About us</a></li>
         </ul>
 
         <!-- Burger icon for Mobile Version -->
@@ -37,7 +39,7 @@
     </header>
 
     <!-- Hero Banner -->
-    <div class="_herobanner">
+    <div class="_herobanner" id="home">
       <div class="herodivheading">
         <h1>Virtual healthcare for you</h1>
         <p>
@@ -52,8 +54,8 @@
     </div>
 
     <!-- Our Services -->
-    <div class="AboutUs">
-      <div class="_AboutUs">
+    <div class="AboutUs" id="aboutUs">
+      <div class="_AboutUs top83">
         <div class="_ourServicesInfo">
           <h1>Our services</h1>
           <div></div>
@@ -111,14 +113,12 @@
             <p>Track and save your medical history and health data</p>
           </div>
         </div>
-
         <button class="outline_button">Learn more</button>
-
-        <!-- <img class="Aavatar" src="Images/Vector.png" alt="Elements"/>-->
       </div>
     </div>
-    <div>
-      <div class="_herobanner margin_bottom">
+
+    <div id="doctor" class="top83">
+      <div class="_herobanner top83">
         <div class="_ilustration">
           <img src="Images/ilustration/illustration1.png" alt="illustration1" />
         </div>
@@ -135,8 +135,8 @@
       </div>
     </div>
 
-    <div>
-      <div class="_herobanner margin_bottom">
+    <div id="apps" class="top83">
+      <div class="_herobanner top83">
         <div class="herodivheading modified_css">
           <h1>Download our mobile apps</h1>
           <div></div>
@@ -153,40 +153,168 @@
       </div>
     </div>
 
-    <div>
+    <!-- Testimonials -->
+    <div id="testimonials" class="top83">
       <div class="testimonial">
         <div class="slideshow-container">
-          <div>
+          <div class="Customer_info">
             <h2>What our customer are saying</h2>
             <div></div>
           </div>
+
+          <!-- Slider -->
           <div>
-            <div class="mySlides fade">
-              <div class="testimonial_client">
-                <img src="Images/logo.png" />
+            <div class="mySlider">
+              <div class="mySlides fade">
+                <div class="testimonial_client">
+                  <img src="Images/testimonial/client1.png" alt="client1" />
+                  <div>
+                    <h3>Edward Newgate</h3>
+                    <p>Founder Circle</p>
+                  </div>
+                </div>
                 <div>
-                  <h3>Edward Newgate</h3>
-                  <p>Founder Circle</p>
+                  Our dedicated patient engagement app and web portal allow you
+                  to access information instantaneously (no tedeous form, long
+                  calls, or administrative hassle) and securely
                 </div>
               </div>
-              <div>
-                Our dedicated patient engagement app and web portal allow you to
-                access information instantaneously (no tedeous form, long calls,
-                or administrative hassle) and securely
+
+              <div class="mySlides fade">
+                <div class="testimonial_client">
+                  <img src="Images/testimonial/client2.png" alt="client1" />
+                  <div>
+                    <h3>Newgate</h3>
+                    <p>Founder Google</p>
+                  </div>
+                </div>
+                <div>
+                  Our dedicated patient engagement (no tedeous form, long calls,
+                  or administrative hassle) and securely
+                </div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="testimonial_client">
+                  <img src="Images/testimonial/client3.png" alt="client1" />
+                  <div>
+                    <h3>Edward</h3>
+                    <p>Founder</p>
+                  </div>
+                </div>
+                <div>
+                  Our dedicated instantaneously (no tedeous form, long calls, or
+                  administrative hassle) and securely
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div style="text-align:center">
+        <div style="text-align: center" class="dot_span">
           <a class="prev" onclick="plusSlides(-1)">
-            <img src="Images/Vector1.png" alt="left Arrow Icon" srcset="">
+            <img src="Images/Vector1.png" alt="left Arrow Icon" />
           </a>
-          <span class="dot" onclick="currentSlide(1)"></span> 
-          <span class="dot" onclick="currentSlide(2)"></span> 
-          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
           <a class="next" onclick="plusSlides(1)">
-            <img src="Images/Vector2.png" alt="left Arrow Icon" srcset="">
+            <img src="Images/Vector2.png" alt="right Arrow Icon" />
           </a>
+        </div>
+      </div>
+    </div>
+
+    <!--  Our Blog  -->
+    <div class="blogPostCover" id="blog">
+      <div class="blogPost">
+        <div class="headlineBlog">
+          <h2>What our customer are saying</h2>
+          <div></div>
+        </div>
+        <div class="_blogPosts">
+          <div class="_blogPost">
+            <img src="Images/blog/blog1.png" alt="Search Doctor Icon" />
+            <div>
+              <h2>Disease detection, check up in the laboratory</h2>
+              <p>
+                In this case, the role of the health laboratory is very
+                important to do a disease detection...
+              </p>
+              <a href="#">Learn more</a>
+            </div>
+          </div>
+          <div class="_blogPost">
+            <img src="Images/blog/blog3.png" alt="Online pharmacy Icon" />
+            <div>
+              <h2>Herbal medicines that are safe for consumption</h2>
+              <p>
+                Herbal medicine is very widely used at this time because of its
+                very good for your health...
+              </p>
+              <a href="#">Learn more</a>
+            </div>
+          </div>
+          <div class="_blogPost">
+            <img src="Images/blog/blog2.png" alt="Consultation Icon" />
+            <div>
+              <h2>Natural care for healthy facial skin</h2>
+              <p>
+                A healthy lifestyle should start from now and also for your skin
+                health. There are some...
+              </p>
+              <a href="#">Learn more</a>
+            </div>
+          </div>
+        </div>
+        <button>
+          View all
+          <img src="Images/vector2.png" alt="right arrow" />
+        </button>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="_footer">
+        <div class="_DesciptionSection">
+          <div>
+            <img src="Images/logofottor.png" alt="Trafalgar" />
+            <h3>Doctor</h3>
+          </div>
+          <p>
+            Doctor provides progressive, and affordable healthcare,
+            accessible on mobile and online for everyone
+          </p>
+          <p>Doctor PTY LTD 2021. All rights reserved</p>
+        </div>
+        <div class="AboutSections">
+          <div>
+            <h3>Company</h3>
+            <ul>
+              <li>About</li>
+              <li>Testimonials</li>
+              <li>Find a doctor</li>
+              <li>Apps</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Region</h3>
+            <ul>
+              <li>Indonesia</li>
+              <li>Singapore</li>
+              <li>Hongkong</li>
+              <li>Canada</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Help</h3>
+            <ul>
+              <li>Help center</li>
+              <li>Contact support</li>
+              <li>Instructions</li>
+              <li>How it works</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
